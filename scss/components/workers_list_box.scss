@@ -1,0 +1,76 @@
+.worker-list-box {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 100vh;
+  border-right: 1px solid #eee;  
+  @include respond-to('sm') {
+    height: auto;
+  }
+
+  @include respond-to('xs') {
+    height: auto;
+  }
+}
+
+.workers-list {
+  @include respond-to('sm') {
+    max-height: 200px;
+    overflow-y: scroll;
+  }
+  @include respond-to('xs') {
+    max-height: 200px;
+    overflow-y: scroll;
+  }
+}
+
+.worker-list-item {
+  margin-bottom: 15px;
+  border-radius: 4px;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.selected {
+    background: #f9d4cc;
+    box-shadow: 1px 1px 1px #b97061;
+  }
+  
+
+  .avatar-wrapper, .worker-details, .id-number, .main-details {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .avatar-wrapper {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    >img {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .worker-details {
+    width: calc(100% - 50px);
+  }
+
+  .main-details {
+    padding: 0 10px;
+    width: calc(100% - 50px);
+    .name {
+      font-size: 16px;
+    }
+
+    .designation {
+      font-size: 14px;
+    }
+  }
+
+  .id-number {
+    font-size: 14px;
+    width: 50px;
+  }
+
+
+}

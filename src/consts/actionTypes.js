@@ -1,0 +1,16 @@
+const actionTypes = {
+  workers: {
+    WORKERS_FETCH: "WORKERS_FETCH",
+    WORKERS_FETCH_SUCCESS: "WORKERS_FETCH_SUCCESS",
+    INITIALIZE_WORKERS: "INITIALIZE_WORKERS"
+  },
+  admin: {
+    INITIALIZE_ADMIN: "INITIALIZE_ADMIN",
+    LOGGING: "LOGGING",
+    LOGIN_SUCCESS: "LOGIN_SUCCESS",
+    LOGIN_FAILE: "LOGIN_FAIL",
+    LOGOUT: "LOGOUT"
+  }
+};
+
+export default actionTypes;

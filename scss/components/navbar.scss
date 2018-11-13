@@ -1,0 +1,13 @@
+.navbar {
+  .btn-toggle {
+    background: #ffffff;
+    border-radius: 2px;
+    display: none;
+    @include respond-to('xs') {
+      display: block;
+    }
+    @include respond-to('sm') {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.worker-details-component {
+  .avatar-wrapper, .worker-details, .id-number, .main-details {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .avatar-wrapper {
+    width: 50px;
+    height: 50px;
+    
+    >img {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .worker-details {
+    width: calc(100% - 50px);
+  }
+
+  .main-details {
+    padding: 0 10px;
+    width: calc(100% - 50px);
+    .name {
+      font-size: 16px;
+    }
+
+    .designation {
+      font-size: 14px;
+    }
+  }
+
+  .id-number {
+    font-size: 14px;
+    width: 50px;
+  }  
+
+  .main-details,.asset-details {
+    width: 50%;
+  }
+  
+  .asset-details {
+    display: inline-block;
+    vertical-align: middle;
+
+    .label {
+      font-size: 16px;
+      margin-right: 5px;
+    }
+
+    .value {
+      font-size: 14px;
+    }
+  }
+
+  @include respond-to('xs') {
+    .avatar-wrapper,.worker-details,.main-details,.asset-details {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .avatar-wrapper {
+      width: 100%;
+      text-align: center;
+      >img {
+        width: 50px;
+        display: inline-block;
+      }
+    }
+  }
+}

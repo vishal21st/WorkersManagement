@@ -1,0 +1,30 @@
+.working-hours-details {
+  
+  .detail {
+    margin-bottom: 15px;
+  }
+
+  .detail-icon {
+    font-size: 30px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    color: $gray-600;
+  }
+
+  .detail-meta {
+    display: inline-block;
+    width: calc(100% - 50px);
+    vertical-align: middle; 
+  }
+
+  .detail-label {
+    font-size: 14px;
+  }
+
+  .detail-value {
+    font-size: 18px; 
+  }
+}

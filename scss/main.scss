@@ -1,0 +1,17 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+//atoms
+@import "./atoms/transitions";
+@import "./atoms/mixins";
+//components
+@import "./components/navbar";
+@import "./components/sidebar";
+@import "./components/workers_list_box";
+@import "./components/worker_details_component";
+@import "./components/worker_details";
+@import "./components/working_hours_details";
+@import "./components/helmet_details";
+//pages
+@import "./pages/login";
+@import "./pages/layout";
+@import "./pages/workers";

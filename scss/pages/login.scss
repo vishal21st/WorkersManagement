@@ -1,0 +1,25 @@
+.login {
+  background: #c47e8d;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 100vh;
+  .company-logo,.login-message {
+    text-align: center;
+  }
+
+  .login-message {
+    font-size: 14px;
+    color: $red;
+  }
+
+  .login-form {
+    margin: auto;
+    background: white;
+    padding: 50px;
+    border-radius: 4px;
+  }
+  .vertical-align {
+    display: flex;
+    align-items: center;
+  }
+}
