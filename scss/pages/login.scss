@@ -1,12 +1,25 @@
 .login {
-  background: #c47e8d;
+  background-image:url("https://images.pexels.com/photos/988873/pexels-photo-988873.jpeg?cs=srgb&dl=abstract-architecture-attractive-988873.jpg&fm=jpg");
   padding-top: 30px;
   padding-bottom: 30px;
   height: 100vh;
+  @include respond-to("xs") {
+    padding: 0;
+  }
+  @include respond-to("sm") {
+    padding: 0;
+  }
+
   .company-logo,.login-message {
     text-align: center;
   }
-
+  
+  .company-logo {
+    >img {
+      width: 150px;
+      display: inline-block;
+    }
+  }
   .login-message {
     font-size: 14px;
     color: $red;
@@ -17,6 +30,17 @@
     background: white;
     padding: 50px;
     border-radius: 4px;
+    border: 1px solid #eee;
+    margin-top: 150px;
+    @include respond-to('xs') {
+      margin-top: 0;
+      height: 100vh;
+    }
+
+    @include respond-to('sm') {
+      margin-top: 0;
+      height: 100vh;
+    }
   }
   .vertical-align {
     display: flex;

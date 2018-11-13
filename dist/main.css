@@ -6550,12 +6550,21 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 14px; }
 
 .login {
-  background: #c47e8d;
+  background-image: url("https://images.pexels.com/photos/988873/pexels-photo-988873.jpeg?cs=srgb&dl=abstract-architecture-attractive-988873.jpg&fm=jpg");
   padding-top: 30px;
   padding-bottom: 30px;
   height: 100vh; }
+  @media screen and (max-width: 480px) {
+    .login {
+      padding: 0; } }
+  @media screen and (max-width: 768px) {
+    .login {
+      padding: 0; } }
   .login .company-logo, .login .login-message {
     text-align: center; }
+  .login .company-logo > img {
+    width: 150px;
+    display: inline-block; }
   .login .login-message {
     font-size: 14px;
     color: #dc3545; }
@@ -6563,7 +6572,17 @@ a.text-dark:hover, a.text-dark:focus {
     margin: auto;
     background: white;
     padding: 50px;
-    border-radius: 4px; }
+    border-radius: 4px;
+    border: 1px solid #eee;
+    margin-top: 150px; }
+    @media screen and (max-width: 480px) {
+      .login .login-form {
+        margin-top: 0;
+        height: 100vh; } }
+    @media screen and (max-width: 768px) {
+      .login .login-form {
+        margin-top: 0;
+        height: 100vh; } }
   .login .vertical-align {
     display: flex;
     align-items: center; }

@@ -55,7 +55,9 @@ class Login extends React.Component {
         <div className="login col-md-12">
           <div className="row vertical-align">
             <form id="Login" className="login-form col-md-4 offset-md-4">
-              <h2 className="company-logo">WakeCap</h2>
+              <h2 className="company-logo">
+                <img src="https://static1.squarespace.com/static/59ed9589e45a7c27e9400b3c/t/5a241aa5e2c483bcf3cf4287/1541907203250/?format=1500w" alt="WakeCap Technologies"/>
+              </h2>
               <p className="login-message">{this.state.loginError}</p>
               <InputField error={this.state.emailError} 
                           inputType="email"
